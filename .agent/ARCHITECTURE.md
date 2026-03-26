@@ -9,8 +9,8 @@
 Antigravity Kit is a modular system consisting of:
 
 - **20 Specialist Agents** - Role-based AI personas
-- **36 Skills** - Domain-specific knowledge modules
-- **11 Workflows** - Slash command procedures
+- **52 Skills** - Domain-specific knowledge modules
+- **14 Workflows** - Slash command procedures
 
 ---
 
@@ -20,8 +20,8 @@ Antigravity Kit is a modular system consisting of:
 .agent/
 ├── ARCHITECTURE.md          # This file
 ├── agents/                  # 20 Specialist Agents
-├── skills/                  # 36 Skills
-├── workflows/               # 11 Slash Commands
+├── skills/                  # 52 Skills
+├── workflows/               # 14 Slash Commands
 ├── rules/                   # Global Rules
 └── scripts/                 # Master Validation Scripts
 ```
@@ -57,7 +57,7 @@ Specialist AI personas for different domains.
 
 ---
 
-## 🧩 Skills (36)
+## 🧩 Skills (52)
 
 Modular knowledge domains that agents can load on-demand. based on task context.
 
@@ -70,6 +70,8 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `tailwind-patterns`     | Tailwind CSS v4 utilities                                             |
 | `frontend-design`       | UI/UX patterns, design systems                                        |
 | `ui-ux-pro-max`         | 50 styles, 21 palettes, 50 fonts                                      |
+| `theme-factory`         | Toolkit for styling artifacts and generating themes                   |
+| `web-artifacts-builder` | Builds complex React/Tailwind frontend artifacts                      |
 
 ### Backend & API
 
@@ -165,10 +167,39 @@ Modular knowledge domains that agents can load on-demand. based on task context.
 | `i18n-localization`       | Internationalization      |
 | `performance-profiling`   | Web Vitals, optimization  |
 | `systematic-debugging`    | Troubleshooting           |
+| `skill-creator`           | Create, improve, and eval skills |
+
+### Design & Media
+
+| Skill                   | Description                                         |
+| ----------------------- | --------------------------------------------------- |
+| `canvas-design`         | Visual generative art code (processing/p5)          |
+| `algorithmic-art`       | Algorithmic and generative art creation protocols   |
+| `slack-gif-creator`     | Creates optimized animated GIFs for Slack           |
+| `brand-guidelines`      | Enforces visual identity and brand style standards  |
+
+### Office & Documents
+
+| Skill                      | Description                                                  |
+| -------------------------- | ------------------------------------------------------------ |
+| `docx`                     | Reads and generates .docx files                              |
+| `pptx`                     | Reads and generates .pptx files                              |
+| `xlsx`                     | Reads and generates .xlsx spreadsheets                       |
+| `pdf`                      | PDF reading, manipulation, and generation                    |
+| `legal-document-explainer` | Simplifies, analyzes contracts, and flags risks              |
+
+### Knowledge & Communication
+
+| Skill                | Description                                         |
+| -------------------- | --------------------------------------------------- |
+| `zettelkasten-forge` | Personal knowledge distillation and management      |
+| `memory-miner`       | Extracts and structures chat session memories       |
+| `doc-coauthoring`    | Collaborative documentation writing                 |
+| `internal-comms`     | Corporate communication templates                   |
 
 ---
 
-## 🔄 Workflows (11)
+## 🔄 Workflows (14)
 
 Slash command procedures. Invoke with `/command`.
 
@@ -185,6 +216,9 @@ Slash command procedures. Invoke with `/command`.
 | `/status`        | Check project status     |
 | `/test`          | Run tests                |
 | `/ui-ux-pro-max` | Design with 50 styles    |
+| `/openspec-apply`| Implement a spec change  |
+| `/openspec-archive`| Archive a deployed change|
+| `/openspec-proposal`| Scaffold a new proposal|
 
 ---
 
@@ -267,8 +301,8 @@ For details, see [scripts/README.md](scripts/README.md)
 | Metric              | Value                         |
 | ------------------- | ----------------------------- |
 | **Total Agents**    | 20                            |
-| **Total Skills**    | 36                            |
-| **Total Workflows** | 11                            |
+| **Total Skills**    | 52                            |
+| **Total Workflows** | 14                            |
 | **Total Scripts**   | 2 (master) + 18 (skill-level) |
 | **Coverage**        | ~90% web/mobile development   |
 
