@@ -36,6 +36,7 @@ jobs:
           tags: ${{ env.IMAGE_URL }}
 
       - name: Deploy to CapRover
+        if: "${{ secrets.CAPROVER_SERVER != '' }}"
         env:
           NODE_TLS_REJECT_UNAUTHORIZED: '0'
         run: |
