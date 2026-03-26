@@ -18,14 +18,16 @@ scripts/
 ├── distill_memories.py  ← CLI: Extrai átomos dos logs brutos
 ├── bibliotecario.py     ← CLI: Audita e arquiva duplicatas/resolvidos
 ├── core/
-│   ├── config.py        ← Constantes, categorias, modelos
-│   ├── llm_client.py    ← Fallback LLM: Groq → Nvidia → Gemini
-│   ├── text_cleaner.py  ← Remove ruído dos logs brutos
-│   ├── zettel_io.py     ← I/O de arquivos Markdown
-│   └── session_paths.py ← Persiste caminhos entre scripts (/tmp)
-└── prompts/
-    ├── distill_prompts.py   ← Prompt do Destilador
-    └── librarian_prompts.py ← Prompt do Bibliotecário
+│   ├── config.py            ← Constantes, categorias, modelos
+│   ├── llm_client.py        ← Fallback LLM: Groq → Nvidia → Gemini
+│   ├── model_discovery.py   ← Descoberta dinâmica de modelos (Contexto >= 125k)
+│   ├── text_cleaner.py      ← Remove ruído dos logs brutos
+│   ├── zettel_io.py         ← I/O de arquivos Markdown
+│   └── session_paths.py     ← Persiste caminhos entre scripts (/tmp)
+├── prompts/
+│   ├── distill_prompts.py   ← Prompt do Destilador
+│   └── librarian_prompts.py ← Prompt do Bibliotecário
+└── tests/                   ← Testes unitários (cleaner, I/O)
 ```
 
 ## 🔄 Fluxo de Execução (2 Passos)
